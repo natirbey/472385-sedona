@@ -5,21 +5,22 @@
     <title>Седона</title>
   </head>
   <body>
-      <header class="main-header">
-          <nav class="main-navigation">
-            <ul>
-              <a class="main-logo">
-                <img src="img/logo.svg" width="150" height="150" alt="Логотип штата Седоны">
-              </a>
-              <li><a href="info.html">Информация</a></li>
-              <li><a href="media.html">Фото и видео</a></li>
-              <li><a href="map.html">Карта штата</a></li>
-              <li><a href="hotel.html">Гостиницы</a></li>
-            </ul>
-          </nav>
-      </header>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <a class="main-logo">
+            <img src="img/logo.svg" width="150" height="150" alt="Логотип штата Седоны">
+          </a>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="hotel.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <section class="filter-hotels">
-          <h2 class="visuality-hidden">Фильтр поиска отелей</h2>
+        <h2 class="visuality-hidden">Фильтр поиска отелей</h2>
         <p>Инфраструктура:</p>
         <p>Тип жилья:</p>
         <p>Стоимость в сутки (р):</p>
@@ -27,53 +28,58 @@
       </section>
       <b>Найдено: 3</b>
       <p>Сортировка:</p>
-      <p>По цене</p>
-      <p>По типу</p>
-      <p>По рейтингу</p>
+      <ul class="sort">
+        <li><a href="#">По цене></a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По рейтингу</a></li>
+      </ul>
       <section class="content-hotels">
         <h2 class="visuality-hidden">Результат поиска отелей</h2>
-        <a>
-          <img src="img/amara-resort.jpg" width="150" height="150" alt="Amara Resort">
-        </a>
-        <b>Amara Resort & Spa</b>
-        <p>Гостиница</p>
-        <p>От 4000 р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-        </p>
-        <input type="button" value="Забронировать">
-        <p>Рейтинг: 8,5</p>
-        <a>
-          <img src="img/desert-quail.jpg" width="150" height="150" alt="Desert Quail">
-        </a>
-        <b>Desert Quail Inn</b>
-        <p>Мотель</p>
-        <p>От 3000 р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-        </p>
-        <input type="button" value="Забронировать">
-        <p>Рейтинг: 8,9</p>
-        <a>
-          <img src="img/villas-diablo.jpg" width="150" height="150" alt="Villas at Poco Diablo">
-        </a>
-        <b>Villas at Poco Diablo</b>
-        <p>Апартаменты</p>
-        <p>От 2000 р.</p>
-        <p>
-          <a href="#">Подробнее</a>
-        </p>
-        <input type="button" value="Забронировать">
-        <p>Рейтинг: 9,2</p>
-      </section>
-      <footer class="main-footer">
-        <p>#Visitsedona</p>
-        <ul class="footer-social-button">
-          <li><a href="#">twitter</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">vkontakte</a></li>
+        <ul class="result-search">
+          <li>
+            <a>
+              <img src="img/amara-resort.jpg" width="150" height="150" alt="Amara Resort">
+            </a>
+            <b>Amara Resort & Spa</b>
+            <p>Гостиница</p>
+            <p>От 4000 р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <input type="button" value="Забронировать">
+            <p>Рейтинг: 8,5</p>
+          </li>
+          <li>
+            <a>
+              <img src="img/desert-quail.jpg" width="150" height="150" alt="Desert Quail">
+            </a>
+            <b>Desert Quail Inn</b>
+            <p>Мотель</p>
+            <p>От 3000 р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <input type="button" value="Забронировать">
+            <p>Рейтинг: 8,9</p>
+          </li>
+          <li>
+            <a>
+              <img src="img/villas-diablo.jpg" width="150" height="150" alt="Villas at Poco Diablo">
+            </a>
+            <b>Villas at Poco Diablo</b>
+            <p>Апартаменты</p>
+            <p>От 2000 р.</p>
+            <p><a href="#">Подробнее</a></p>
+            <input type="button" value="Забронировать">
+            <p>Рейтинг: 9,2</p>
+          </li>
         </ul>
-        <p>Website by</p>
-      </footer>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p>#Visitsedona</p>
+      <ul class="footer-social-button">
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">facebook</a></li>
+         <li><a href="#">vkontakte</a></li>
+      </ul>
+      <p>Website by</p>
+    </footer>
   </body>
 </html>
