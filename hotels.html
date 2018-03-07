@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-logo">
+        <img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип штата Седоны">
+      </a>
       <nav class="main-navigation">
-        <a class="main-logo">
-            <img src="http://placehold.it/50x50" width="50" height="50" alt="Логотип штата Седоны">
-        </a>
         <ul>
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
@@ -26,18 +26,24 @@
         <div>Стоимость в сутки (р):</div>
         <input type="button" value="Показать">
       </section>
-      <p>Найдено: 3</p>
-      <section>
-      <p>Сортировка:</p>
-        <ul class="sort">
-          <li><a href="#">По цене></a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По рейтингу</a></li>
-        </ul>
-      </section>
-      <article class="result-search">
-        <h2 class="visuality-hidden">Результат поиска отелей</h2>
-        <section>
+      <section class="result-search">
+        <div class="sort">
+          <p>Найдено: 3</p>
+          <p>Сортировка:</p>
+          <ul class="sort-list">
+            <li><a href="#">По цене></a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
+          </ul>
+          <a>
+            <img src="http://placehold.it/50x50" width="50" height="50" alt="Up"> 
+          </a>
+          <a>
+            <img src="http://placehold.it/50x50" width="50" height="50" alt="Down"> 
+          </a>
+        </div>
+        <article>
+          <h2 class="visuality-hidden">Результат поиска отелей</h2>
           <a>
             <img src="http://placehold.it/150x150" width="150" height="150" alt="Amara Resort">
           </a>
@@ -47,8 +53,8 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
           <p>Рейтинг: 8,5</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <a>
             <img src="http://placehold.it/100x50" width="150" height="150" alt="Desert Quail">
           </a>
@@ -58,8 +64,8 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
           <p>Рейтинг: 8,9</p>
-        </section>
-        <section>
+        </article>
+        <article>
           <a>
             <img src="http://placehold.it/100x50" width="150" height="150" alt="Villas at Poco Diablo">
           </a>
@@ -69,8 +75,8 @@
           <a href="#">Подробнее</a>
           <a href="#">Забронировать</a>
           <p>Рейтинг: 9,2</p>
-        </section>
-      </article>
+        </article>
+      </section>
     </main>
     <footer class="main-footer">
       <p>#Visitsedona</p>
