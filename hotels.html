@@ -24,32 +24,32 @@
         <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
           <div>
             <p>Инфраструктура:</p>
-            <label for="pool-form">Бассейн</label>
             <input id="pool-form" name="pool" type="checkbox" checked>
-            <label for="parking-form">Парковка</label>
+            <label for="pool-form">Бассейн</label>
             <input id="parking-form" name="parking" type="checkbox">
-            <label for="wifi-form">Wi-fi</label>
+            <label for="parking-form">Парковка</label>
             <input id="wifi-form" name="wifi" type="checkbox">
+            <label for="wifi-form">Wi-fi</label>
           </div>
           <div>
             <p>Тип жилья:</p>
-            <label for="hotel-form">Гостиница</label>
             <input id="hotel-form" name="hotel" type="checkbox" checked>
-            <label for="motel-form">Мотель</label>
+            <label for="hotel-form">Гостиница</label>
             <input id="motel-form" name="motel" type="checkbox" checked>
-            <label for="apartment">Апартаменты</label>
+            <label for="motel-form">Мотель</label>
             <input id="apartment" name="apartment" type="checkbox" checked>
+            <label for="apartment">Апартаменты</label>
           </div>
           <div>
             <p>Стоимость в сутки (р):</p>
-            <label for="price-from-form" class="visuality-hidden">От</label>
             <input id="price-from-form" type="text" name="price-from" value="От 0">
-            <label for="price-to-form" class="visuality-hidden">До</label>
+            <label for="price-from-form" class="visuality-hidden">От</label>
             <input id="price-to-form" type="text" name="price-to" value="До 3000">
-            <label for="rande-form" class="visuality-hidden">Диапазон</label>
+            <label for="price-to-form" class="visuality-hidden">До</label>
             <input id="rande-form" type="range" name="rande" min="0" max="3000">
+            <label for="rande-form" class="visuality-hidden">Диапазон</label>
           </div>
-          <button type="submit" value="Показать"></button>
+          <button type="submit">Показать</button>
         </form>
       </section>
         <section class="result-search">
@@ -58,7 +58,7 @@
           <p>Найдено: 3</p>
           <p>Сортировка:</p>
           <ul class="sort-list">
-            <li><a href="#">По цене></a></li>
+            <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
           </ul>
