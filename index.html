@@ -74,19 +74,44 @@
         </div>
       </section>
       <section class="search">
+        <h2 class="visuality-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <h2>Поиск гостиницы в Седоне</h2>
-        <input type="button" value="Найти">
+        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <button>Поиск гостиницы в Седоне</button>
+          <div>
+            <label for="incoming-form">Дата заезда</label>
+            <input id="incoming-form" type="date" name="incoming-date">
+            <button>Календарь</button> 
+          </div>
+          <div>
+            <label for="outcoming-form">Дата выезда</label>
+            <input id="outcoming-form" type="date" name="outcoming-date">
+            <button>Календарь</button>
+          <div>
+          <div>
+            <button>Плюс</button>
+            <label for="adults-form">Взрослые</label>
+            <input id="adults-form" type="number" name="adults">
+            <button>Минус</button>
+          </div>
+          <div>
+            <button>Плюс</button>
+            <label for="children-form">Дети</label>
+            <input id="children-form" type="number" name="children">
+            <button>Минус</button>
+          </div>
+          <button type="submit" value="Найти">
+        </form>
       </section>
       <section class="map"></section>
     </main>
     <footer class="main-footer">
-      <p><a href="#">#Visitsedona</a></p>
+      <p><a>#Visitsedona</a></p>
       <ul class="footer-social-button">
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">vkontakte</a></li>
+        <li><a>twitter</a></li>
+        <li><a>facebook</a></li>
+        <li><a>vkontakte</a></li>
       </ul>
       <p>Website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_name.svg" width="115" height="41" alt="Разработано Htmlacademy"></a></p>
     </footer>
