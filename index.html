@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="main-logo">
+      <a class="main-logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип штата Седоны">
       </a>
       <nav class="main-navigation">
@@ -77,29 +77,29 @@
         <h2 class="visuality-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-          <button>Поиск гостиницы в Седоне</button>
           <div>
             <label for="incoming-form">Дата заезда</label>
             <input id="incoming-form" type="date" name="incoming-date">
-            <button>Календарь</button> 
+            <button type="button">Календарь</button> 
           </div>
           <div>
             <label for="outcoming-form">Дата выезда</label>
             <input id="outcoming-form" type="date" name="outcoming-date">
-            <button>Календарь</button>
+            <button type="button">Календарь</button>
           </div>
           <div>
             <label for="adults-form">Взрослые</label>
-            <button>Плюс</button>
+            <button type="button">Плюс</button>
             <input id="adults-form" type="number" name="adults">
-            <button>Минус</button>
+            <button type="button">Минус</button>
           </div>
           <div>
             <label for="children-form">Дети</label>
-            <button>Плюс</button>
+            <button type="button">Плюс</button>
             <input id="children-form" type="number" name="children">
-            <button>Минус</button>
+            <button type="button">Минус</button>
           </div>
           <button type="submit">Найти</button>
         </form>
