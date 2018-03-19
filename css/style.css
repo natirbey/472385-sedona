@@ -225,7 +225,8 @@ a {
   text-transform: uppercase;
 }
 
-.main-footer ul {
+.main-footer ul,
+.sort-list {
   list-style: none;
 }
 
@@ -280,3 +281,85 @@ a {
 .academy-svg:active rect {
   fill: #bdbbbc;
 }
+
+
+.filter-hotels {
+  color:#ffffff;
+  background-image: url("../img/filter-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.filter-form legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-form label {
+  font: inherit;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-form input[type="text"],
+.filter-form button[type="submit"] {
+  text-transform: uppercase;
+  color:#ffffff;
+  background-color: transparent;
+}
+
+.sort p:first-of-type,
+article a>h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color:#000000;
+}
+
+article a>h3:hover,
+article a>h3:focus {
+  color:#81b3d2;
+}
+
+article a>h3:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-list a,
+.sort p:nth-of-type(2) {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-list li:first-of-type a {
+  color: #81b3d2;
+  opacity: 1;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+  color:#81b3d2;
+  opacity: 1;
+}
+
+.sort-list a:active {
+  color:#000000;
+  opacity:1;
+}
+
+article a:nth-of-type(3),
+article a:nth-of-type(4) {
+  font-weight: bold;
+  color: #000000;
+}
+
+
+
