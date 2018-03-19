@@ -2,8 +2,281 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Regular", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+  background-color: #333333;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.features h1 {
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+  font-size: 21px;
+}
+
+.features>p:first-of-type {
+  line-height: 26px;
+  color: #333333;
+}
+
+.features-item h3{
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  /*color: #000000;*/
+}
+
+.features-item-more h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.features-item-more {
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-item-inner .features-item {
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.modal-form input[type="text"],
+.modal-form input[type="number"] {
+  text-transform: uppercase;
+  font: inherit;
+}
+
+.modal-search p:first-of-type {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal-search p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modal-search .button {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border:none;
+}
+
+.search-btn,
+.submit-btn {
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+}
+
+.submit-btn {
+  background-color: #81b3d2;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #604e43;
+}
+
+.search-btn:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0,3);
+}
+
+.plus-btn, .minus-btn {
+  background-image: url("../img/plus-def.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 38px;
+  height: 38px;
+  /*text-align: center;*/
+}
+
+.minus-btn {
+  background-image: url("../img/minus-def.png");
+}
+
+.plus-btn:hover,
+.plus-btn:focus {
+  background-image: url("../img/plus-hover.png");
+}
+
+.minus-btn:hover,
+.minus-btn:focus {
+  background-image: url("../img/minus-hover.png");
+}
+
+.plus-btn:active {
+  background-image: url("../img/plus-act.png");
+}
+
+.minus-btn:active {
+  background-image: url("../img/minus-act.png");
+}
+
+.form-field {
+  font-weight: bold;
+}
+
+.form-field input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border:none;
+}
+
+.form-field input:hover,
+.form-field input:focus {
+  background-color: #ebebeb;
+}
+
+.form-field input:active {
+  background-color: transparent;
+  outline: 2px solid #e5e5e5;
+}
+
+.map {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.svg {
+  fill:#cacaca;
+}
+
+.svg:hover,
+.svg:focus {
+  fill: #000000;
+}
+
+.svg:active {
+  fill:#81b3d2;
+}
+
+.hashtag a {
+  background-color: transparent;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.twitter-wrap,
+.fb-wrap,
+.youtube-wrap {
+  display:flex;
+  background-color:#81b3d2;
+  width: 46px;
+  height: 48px;
+}
+
+.twitter-wrap:hover,
+.fb-wrap:hover,
+.youtube-wrap:hover,
+.twitter-wrap:focus,
+.fb-wrap:hover:focus,
+.youtube-wrap:focus {
+  background-color:#669ec0;
+}
+
+.twitter-wrap:active,
+.fb-wrap:active,
+.youtube-wrap:active {
+  background-color: #5496bd;
+}
+
+.twitter-svg,
+.fb-svg,
+.youtube-svg {
+  margin:auto;
+}
+
+.twitter-svg:active,
+.fb-svg:active,
+.youtube-svg:active {
+  fill-opacity:0.3; 
+}
+
+.academy-svg path {
+  fill: #231f20;
+}
+
+.academy-svg:hover path,
+.academy-svg:focus path,
+.academy-svg:hover rect,
+.academy-svg:focus rect {
+  fill: #81b3d2;
+}
+
+.academy-svg:active path,
+.academy-svg:active rect {
+  fill: #bdbbbc;
 }
