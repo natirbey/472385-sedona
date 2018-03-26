@@ -138,6 +138,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   font-size: 14px;
   line-height: 21px;
+  width: 400px; 
   
   background-repeat: no-repeat;
   background-size: 75px 72px;
@@ -195,8 +196,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #f2f2f2;
+  background-color: transparent;
   border:none;
+  outline: 2px solid lawngreen;
 }
 
 .search-btn,
@@ -256,14 +258,19 @@ input[type="radio"].visually-hidden {
 }
 
 .form-field {
+  position: relative;
   font-weight: bold;
 }
 
 .form-field input {
   font: inherit;
-
+  color: #000000;
   background-color: #f2f2f2;
   border:none;
+  width: 346px;
+  padding: 8px 13px;
+  box-sizing: border-box;
+  
 }
 
 .form-field input:hover,
@@ -274,6 +281,31 @@ input[type="radio"].visually-hidden {
 .form-field input:active {
   background-color: transparent;
   outline: 2px solid #e5e5e5;
+}
+
+.calendar-btn {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 21px;
+  height: 22px;
+  right: 9px;
+  top: 8px;
+}
+
+.form-field input[type="number"] {
+  width: 114px;
+  text-align: center;
+  background-image: url("../img/minus-def.png"), url("../img/plus-def.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 14px center, 89px center;
+  background-size: 12px 3px, 11px 11px;
+}
+
+.form-number-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .map {
@@ -300,6 +332,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   margin-left: 135px;
+  margin-top: 48px;
   background-color: transparent;
   color: #000000;
   font-size: 21px;
@@ -334,7 +367,6 @@ input[type="radio"].visually-hidden {
 .academy-svg:active rect {
   fill: #bdbbbc;
 }
-
 
 .filter-hotels {
   color:#ffffff;
@@ -478,10 +510,12 @@ article a:nth-of-type(4) {
 
 .features-item-inner {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-item-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .features-content {
@@ -530,6 +564,7 @@ article a:nth-of-type(4) {
 }
 
 .search-btn {
+  position: relative;
   margin-bottom: 0px;
   width: 568px;
   padding: 32px 100px;
@@ -543,7 +578,10 @@ article a:nth-of-type(4) {
 
 .main-footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  top:  0px;
+  left: 0px;
 }
 
 .footer-social {
@@ -558,6 +596,7 @@ article a:nth-of-type(4) {
 
 .social-button {
   display:flex;
+  flex-wrap: wrap;
   background-color:#81b3d2;
   align-items: center;
   justify-content: center;
@@ -580,6 +619,17 @@ article a:nth-of-type(4) {
   fill-opacity:0.3; 
 }
 
+.footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-copyright a {
+  padding: 0;
+  margin: 0;
+}
+
 .footer-copyright span {
   font-size: 14px;
   line-height: 26px;
@@ -597,11 +647,13 @@ article a:nth-of-type(4) {
 .sort {
   margin-bottom: 0px;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
 .sort-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .result-search {
@@ -623,6 +675,7 @@ article a:nth-of-type(4) {
 
 .search-item-wrap {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -633,3 +686,36 @@ article a:nth-of-type(4) {
 .search-item-inner {
   width: auto;
 }
+
+.form-wrap {
+  position: relative;
+}
+
+.modal-form {
+  position: absolute;
+  width: 568px;
+  color: #000000;
+  background-color: #ffffff;
+  top: 90px;
+  left: 50%;
+  margin-left: -284px;
+  padding: 55px;
+  box-sizing: border-box;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.14);
+}
+
+.form-field {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal-form .form-field:last-of-type {
+  margin-bottom: 55px;
+}
+
+.submit-btn {
+  width: 458px;
+  padding: 16px 198px;
+}
+
+
