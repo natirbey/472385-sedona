@@ -372,17 +372,31 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/filter-background.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .filter-form {
   display: flex;
-  padding: 27px 73px 31px 73px;
+  padding: 27px 73px 30px 73px;
+}
+
+.infrastructure-wrap {
+  margin-right: 123px;
+}
+
+.house-wrap {
+  margin-right: 346px;
 }
 
 .filter-form legend {
   font-size: 16px;
+  line-height: 21px;
   font-weight: bold;
   margin-bottom: 25px;
+}
+
+.filter-form legend:last-of-type {
+  margin-bottom: 9px;
 }
 
 .filter-form label {
@@ -395,15 +409,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.filter-form input[type="text"],
-.filter-form button[type="submit"] {
+.filter-form input[type="text"] {
   text-transform: uppercase;
   color:#ffffff;
   background-color: transparent;
-}
-
-.filter-form div:first-of-type {
-  margin-right: 124px;
 }
 
 .filter-inner {
@@ -473,10 +482,22 @@ article a>h3:active {
   opacity: 0.3;
 }
 
+.sort-list {
+  padding: 0;
+  margin: 0;
+}
+
 .sort-list a,
 .sort p:nth-of-type(2) {
+  padding: 0;
+  margin: 0;
   font-size: 12px;
   line-height: 18px;
+  margin-right: 40px;
+}
+
+.sort-list a {
+  margin-right: 35px;
 }
 
 .sort-list a {
@@ -698,7 +719,6 @@ article a>h3:active {
 }
 
 .filter-hotels {
-  margin-bottom: 30px;
   text-align: left;
   width: 1200px;
 }
@@ -718,6 +738,8 @@ article a>h3:active {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: baseline;
+  padding: 31px 73px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .sort-list {
@@ -726,24 +748,62 @@ article a>h3:active {
 }
 
 .result-search {
-  margin-bottom: 0px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .updown {
   margin-left: auto;
 }
 
+.rating-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  text-align: right;
+}
+
+.rating-wrap p {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: #f2f2f2;
+  padding: 3px 18px;
+  margin-top: auto;
+}
+
+.star-wrap {
+  width: 88px;
+  height: 17px;
+  margin-left: auto;
+  background-image: url("../img/star.svg");
+  background-size: auto;
+  background-repeat: space;
+
+}
+
+.three-stars {
+  width: 62px;
+}
+
+.two-stars {
+  width: 40px;
+}
+
 .sort p:first-of-type {
-  padding-right: 25px;
-  margin-right: auto;
+  padding: 0;
+  margin: 0;
+  margin-right: 50px;
 }
 
 .search-item {
   display: flex;
+  padding: 31px 73px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.search-item-wrap {
-  margin-left: 30px;
+.search-item img {
+  margin-right: 30px;
 }
 
 .search-item-wrap h3 {
@@ -821,4 +881,137 @@ article a>h3:active {
   padding: 16px 198px;
 }
 
+.range-form {
+  text-transform: uppercase;
+  width: 330px;
+  color: #ffffff;
+}
 
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color:inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+.updown a {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.up-link polygon {
+  fill: #cacaca;
+}
+
+.down-link polyline {
+  fill: #81b3d2;
+}
+
+.up-link:hover polygon,
+.up-link:focus polygon,
+.down-link:hover polyline,
+.down-link:focus polyline {
+  fill: #231f20;
+}
+
+.up-link:active polygon,
+.down-link:active polyline {
+  fill: #81b3d2;
+}

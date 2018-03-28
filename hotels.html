@@ -26,7 +26,7 @@
       <section class="filter-hotels">
         <h2 class="visually-hidden">Фильтр поиска отелей</h2>
         <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru">
-          <div>
+          <div class="infrastructure-wrap">
             <fieldset><legend>Инфраструктура:</legend>
               <div class="filter-inner">
               <input  class="visually-hidden" id="pool-form" name="pool" type="checkbox" checked>
@@ -42,11 +42,15 @@
               </div>
             </fieldset>
           </div>
-          <div>
+          <div class="house-wrap">
             <fieldset><legend>Тип жилья:</legend>
               <div class="filter-inner">
               <input class="visually-hidden" id="hotel-form" name="hotel" type="checkbox" checked>
               <label for="hotel-form">Гостиница</label>
+              </div>
+              <div class="filter-inner">
+              <input class="visually-hidden" id="motel-form" name="motel" type="checkbox" checked>
+              <label for="motel-form">Мотель</label>
               </div>
               <div class="filter-inner">
               <input class="visually-hidden" id="motel-form" name="motel" type="checkbox" checked>
@@ -60,37 +64,51 @@
           </div>
           <div>
             <fieldset><legend>Стоимость в сутки (р):</legend>
-              <div>
-              <input id="price-from-form" type="text" name="price-from" placeholder="От 0">
-              <label for="price-from-form" class="visually-hidden">От</label>        
-              <input class="price-to-form" id="price-to-form" type="text" name="price-to" placeholder="До 3000">
-              <label for="price-to-form" class="visually-hidden">До</label>
-              </div>
-              <div>
-              <input id="rande-form" type="text" name="rande" min="0" max="3000">
-              <label for="rande-form" class="visually-hidden">Диапазон</label>
-              </div>
+              <div class="range-form">
+                <div class="price-controls">
+                  <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
             </fieldset>
-          <button type="submit">Показать</button>
+              <button class="btn-transparent" type="submit">Показать</button>
+              </div>
+          </div>
         </div>
         </form>
       </section>
       <section class="result-search">
-        <div class="result-wrap">
-        <h2 class="visually-hidden">Сортировка</h2>
-        <div class="sort">
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul class="sort-list">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <div class="updown">
-            <a href="#">Вверх</a>
-            <a href="#">Вниз</a>
+  
+          <h2 class="visually-hidden">Сортировка</h2>
+          <div class="sort">
+            <p>Найдено: 3</p>
+            <p>Сортировка:</p>
+            <ul class="sort-list">
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+            <div class="updown">
+              <a class="up-link" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+                </svg>
+              </a>
+              <a class="down-link" href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
         <article class="search-item">
           <a href="#">
             <img src="img/hotel1.jpg" width="135" height="90" alt="Amara Resort">
@@ -104,8 +122,8 @@
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
           </div>
-          <div>
-            <div>STAR</div>
+          <div class="rating-wrap">
+            <div class="star-wrap"></div>
             <p>Рейтинг: 8,5</p>
           </div>
         </article>
@@ -122,8 +140,8 @@
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
           </div>
-          <div>
-            <div>STAR</div>
+          <div class="rating-wrap">
+              <div class="star-wrap three-stars"></div>
             <p>Рейтинг: 8,9</p>
           </div>
         </article>
@@ -140,12 +158,12 @@
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
           </div>
-          <div>
-            <div>STAR</div>
+          <div class="rating-wrap">
+            <div class="star-wrap two-stars"></div>
             <p>Рейтинг: 9,2</p>
           </div>
         </article>
-        </div>
+      
       </section>
     </main>
     <footer class="main-footer">
