@@ -22,7 +22,7 @@
           </ul>
         </nav>
       </header>
-    <main>
+      <main>
       <section class="filter-hotels">
         <h2 class="visually-hidden">Фильтр поиска отелей</h2>
         <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru">
@@ -53,18 +53,14 @@
               <label for="motel-form">Мотель</label>
               </div>
               <div class="filter-inner">
-              <input class="visually-hidden" id="motel-form" name="motel" type="checkbox" checked>
-              <label for="motel-form">Мотель</label>
-              </div>
-              <div class="filter-inner">
               <input class="visually-hidden" id="apartment" name="apartment" type="checkbox" checked>
               <label for="apartment">Апартаменты</label>
               </div>
             </fieldset>
           </div>
           <div>
-            <fieldset><legend>Стоимость в сутки (р):</legend>
               <div class="range-form">
+              <fieldset><legend class="price">Стоимость в сутки (р):</legend>
                 <div class="price-controls">
                   <label class="min-price">От <input type="text" name="min-price" value="0"></label>
                   <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
@@ -80,11 +76,10 @@
               <button class="btn-transparent" type="submit">Показать</button>
               </div>
           </div>
-        </div>
+        
         </form>
       </section>
       <section class="result-search">
-  
           <h2 class="visually-hidden">Сортировка</h2>
           <div class="sort">
             <p>Найдено: 3</p>
@@ -119,8 +114,8 @@
             <p>Гостиница</p>
             <p>От 4000 р.</p>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="detail" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </div>
           <div class="rating-wrap">
             <div class="star-wrap"></div>
@@ -137,8 +132,8 @@
             <p>Мотель</p>
             <p>От 3000 р.</p>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="detail" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </div>
           <div class="rating-wrap">
               <div class="star-wrap three-stars"></div>
@@ -155,15 +150,14 @@
             <p>Апартаменты</p>
             <p>От 2000 р.</p>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="detail" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </div>
           <div class="rating-wrap">
             <div class="star-wrap two-stars"></div>
             <p>Рейтинг: 9,2</p>
           </div>
         </article>
-      
       </section>
     </main>
     <footer class="main-footer">
@@ -222,7 +216,7 @@
           </svg>
         </a>
       </p>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>
