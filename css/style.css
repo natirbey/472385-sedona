@@ -10,7 +10,6 @@ body {
   text-align: center;
 
   background-color: #f2f2f2;
-  outline:5px solid green;
 }
 
 @font-face {
@@ -208,7 +207,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: transparent;
   border:none;
-  outline: 2px solid lawngreen;
 }
 
 .search-btn,
@@ -301,7 +299,6 @@ input[type="radio"].visually-hidden {
 
 .form-field input:active {
   background-color: transparent;
-  outline: 2px solid #e5e5e5;
 }
 
 .calendar-btn {
@@ -327,10 +324,19 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .form-number-wrap label {
   margin-right: auto;
+}
+
+.form-number {
+  width: 50%;
+}
+
+.children-label {
+  margin-left: 53px;
 }
 
 .map {
@@ -393,10 +399,14 @@ input[type="radio"].visually-hidden {
   fill: #bdbbbc;
 }
 
+.footer-copyright .academy-link {
+  padding-top: 3px;
+}
+
 .filter-hotels {
   color:#ffffff;
   background-image: url("../img/filter-background.jpg");
-  background-position: 0 0;
+  background-position: 0 -55px;
   background-repeat: no-repeat;
   background-size: 1200px 562px;
   background-clip: content-box;
@@ -569,7 +579,6 @@ article a>h3:active {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid red;
   width: 1200px;
   
 }
@@ -580,7 +589,6 @@ article a>h3:active {
 
 .site-navigation a {
   display: block;
-  outline: 1px solid black;
   margin: 14px 66px 17px 64px;
 }
 
@@ -590,7 +598,6 @@ article a>h3:active {
 
 .banner {
   margin-bottom: 60px;
-  outline: 2px solid darkmagenta;
 }
 
 .banner img {
@@ -600,12 +607,7 @@ article a>h3:active {
 }
 
 .features>h1 {
-  outline:2px solid tomato;
   margin-bottom: 28px;
-}
-
-.slogan {
-  outline: 2px solid goldenrod;
 }
 
 .features-item-inner {
@@ -662,7 +664,6 @@ article a>h3:active {
 
 .features-item {
   width: 400px;
-  outline: 2px solid firebrick;
 }
 
 .search-btn {
@@ -684,7 +685,7 @@ article a>h3:active {
   align-items: center;
   background-color: #ffffff;
   opacity: 0.9;
-  padding: 36px 100px 36px 136px;
+  padding: 34px 100px 36px 133px;
 }
 
 .footer-position {
@@ -793,6 +794,7 @@ article a>h3:active {
   flex-direction: column;
   margin-left: auto;
   text-align: right;
+  margin-bottom: 6px;
 }
 
 .rating-wrap p {
@@ -800,7 +802,7 @@ article a>h3:active {
   margin: 0;
   display: inline-block;
   background-color: #f2f2f2;
-  padding: 3px 18px;
+  padding: 2px 13px;
   margin-top: auto;
 }
 
@@ -830,7 +832,7 @@ article a>h3:active {
 
 .search-item {
   display: flex;
-  padding: 29px 73px;
+  padding: 27px 73px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -841,8 +843,9 @@ article a>h3:active {
 .search-item-wrap h3 {
   padding: 0;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
   text-align: left;
+  margin-top: -3px;
 }
 
 .search-item-wrap a:nth-of-type(2),
@@ -856,30 +859,27 @@ article a>h3:active {
 
 .search-item-wrap a:nth-of-type(2) {
   background-color: #83b3ca;
-  padding: 5px 19px 5px 18px;
-  margin-right: 6px;
+  padding: 3px 15px 3px 16px;
+  margin-right: 4px;
 }
 
 .search-item-wrap a:nth-of-type(3) {
   background-color: #766357;
-  padding: 5px 16px 5px 17px;
+  padding: 4px 16px 3px 17px;
 }
 
 .price-wrap {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  margin-right: 79px;
 }
 
 .price-wrap p {
   padding: 0;
   margin: 0;
 }
-
-.price-wrap>p {
-  padding-right: 41px;
-}
-
 
 .search-item-inner {
   width: auto;
@@ -906,13 +906,9 @@ article a>h3:active {
   margin-bottom: 30px;
 }
 
-.modal-form .form-field:last-of-type {
-  margin-bottom: 55px;
-}
-
 .submit-btn {
   width: 458px;
-  padding: 16px 198px;
+  padding: 16px 195px;
 }
 
 .range-form {
