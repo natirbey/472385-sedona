@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1280px;
+  min-width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -150,20 +150,24 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   width: 400px; 
   background-repeat: no-repeat;
-  background-size: 76px 72px;
-  background-position: center 59px;
 }
 
 .features-icon-1 {
   background-image: url("../img/icon-1.svg");
+  background-size: 76px 72px;
+  background-position: center 59px;
 }
 
 .features-icon-2 {
   background-image: url("../img/icon-3.svg");
+  background-size: 74px 72px;
+  background-position: center 59px;
 }
 
 .features-icon-3 {
   background-image: url("../img/icon-2.svg");
+  background-size: 74px 76px;
+  background-position: center 56px;
 }
 
 .features-item-more p {
@@ -183,6 +187,15 @@ input[type="radio"].visually-hidden {
 .modal-form input[type="number"] {
   text-transform: uppercase;
   font: inherit;
+}
+
+}
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #000000;
 }
 
 .modal-search p:first-of-type {
@@ -592,14 +605,35 @@ article a>h3:active {
 
 .site-navigation li {
   width:20%;
+  box-sizing:border-box;
+  /*padding: 14px 66px 17px 64px;*/
 }
 
-.site-navigation a {
-  display: block;
-  margin: 14px 66px 17px 64px;
+.site-navigation li:nth-of-type(1) {
+  padding: 15px 3px 16px 0;
+}
+
+.site-navigation li:nth-of-type(2) {
+  padding: 15px 0 16px 3px;
 }
 
 .site-navigation li:nth-of-type(3) {
+  padding: 15px 0 16px 4px;
+}
+
+.site-navigation li:nth-of-type(4) {
+  padding: 15px 0 16px 17px;
+}
+
+.site-navigation a {
+  margin: 0;
+  padding: 0;
+  /*display: block;*/
+}
+
+
+
+.site-navigation li:nth-of-type(3n) {
   margin-left: auto;
 }
 
@@ -697,7 +731,7 @@ article a>h3:active {
 
 .footer-position {
   position: relative;
-  transform: translate(0, -100%);
+  margin-top: -120px;
 }
 
 .footer-social {
@@ -955,7 +989,7 @@ article a>h3:active {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 81px;
   padding-left: 65px;
 }
 
