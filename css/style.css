@@ -189,11 +189,22 @@ input[type="radio"].visually-hidden {
   font: inherit;
 }
 
+input::placeholder {
+  color: #000000;
 }
-input::placeholder,
-input::-webkit-input-placeholder,
-input::-moz-placeholder,
-input:-moz-placeholder,
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+}
+
+input:-moz-placeholder {
+  color: #000000;
+}
+
 input:-ms-input-placeholder {
   color: #000000;
 }
